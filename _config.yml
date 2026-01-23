@@ -11,8 +11,8 @@ locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
 title                    : "Ngoc Bao Dinh"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Ngoc Bao Dinh"
+description              : &description "Computer Science & Robotics student at USF"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "avatar.png"
   name             : "Ngoc Bao Dinh"
   pronouns         : # example: "she/her"  
-  bio              : "Computer Engineering & Robotics"
+  bio              : "Computer Science & Robotics"
   location         : "Tampa, Florida"
   employer         : "University of South Florida"
   uri              : # URL
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/baodn/"
+  linkedin         : "baodn/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
