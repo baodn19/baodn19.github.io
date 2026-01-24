@@ -33,3 +33,6 @@ News
     <span class="news-content">I was interviewed by FOX13 Tampa Bay for my work at the RARE Lab. (<a href="https://www.fox13news.com/news/usf-researchers-develop-ai-robot-tech-could-save-lives-emergencies">short article</a>)</span>
   </div>
 </div>
+
+Selected Publications
+======

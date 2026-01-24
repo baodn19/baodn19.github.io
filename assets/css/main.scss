@@ -47,32 +47,168 @@
   max-height: 200px;
   overflow-y: auto;
   padding: 15px;
-  border: 1px solid #444; 
+  border: 1px solid var(--border-color, #444); 
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.05);
+  /* Uses a transparent background that works in both modes */
+  background-color: rgba(128, 128, 128, 0.05); 
+  /* CHANGE THIS VALUE TO INCREASE SPACE */
+  margin-bottom: 30px;
 }
 
 .news-item {
   display: flex;
   margin-bottom: 12px;
-  align-items: flex-start; /* Keeps date at the top of multi-line news */
+  align-items: flex-start;
 }
 
 .news-date {
-  font-weight: bold; 
-  color: #ffffff !important;
+  font-weight: bold;
+  /* This variable adapts to the theme text color automatically */
+  color: var(--primary-color, inherit) !important; 
   min-width: 120px;
-  flex-shrink: 0; /* Ensures the date doesn't get squashed */
+  flex-shrink: 0;
 }
 
 .news-content {
-  color: #ffffff !important; /* This forces the main text to white */
+  /* Inherit allows it to follow the theme's default text color */
+  color: inherit; 
   line-height: 1.4;
-  flex: 1;                  /* Ensures text takes up the remaining space */
+  flex: 1;
 }
 
 .news-content a {
-  color: #4a9eff !important;
+  color: #4a9eff !important; 
   text-decoration: underline;
-  display: inline; /* Ensures link stays inside the sentence */
+}
+
+/* Publication Block Styling */
+.pub-block-container {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.pub-image-column {
+  flex: 0 0 160px; /* Width of the thumbnail area */
+  text-align: center;
+}
+
+.pub-label {
+  background: #008ca8; /* Cyan color from your example */
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 0;
+  border-radius: 4px 4px 0 0;
+  text-transform: uppercase;
+}
+
+.pub-teaser img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 0 0 4px 4px;
+}
+
+.pub-content-column { flex: 1; }
+
+.pub-authors { margin: 0 0 3px 0; color: var(--primary-color); font-size: 0.95rem; }
+.pub-venue { margin: 0 0 15px 0; font-size: 0.9rem; color: #777; }
+
+/* Pill-style Buttons */
+.pub-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.pub-btn {
+  border: 1px solid #333;
+  color: inherit !important;
+  padding: 4px 15px;
+  font-size: 0.8rem;
+  border-radius: 20px; /* Makes them "pill" shaped */
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.pub-btn:hover {
+  background: #333;
+  color: #fff !important;
+}
+
+/* 4-Row Styling */
+.pub-content-column .archive__item-title {
+  margin: 0 0 5px 0 !important;
+  font-size: 1.15rem;
+}
+
+/* Optional: Match title font size for a cleaner look */
+.pub-content-column .archive__item-title a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Professional Publication List with Separator Bars */
+.publication-flex-row {
+  border-top: 1px solid #eeeeee; /* The light bar between papers */
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+/* Remove the bar from the very first item */
+.publication-flex-row:first-of-type {
+  border-top: none;
+  margin-top: 0;
+}
+
+.archive__subtitle {
+  border-bottom: none !important;
+}
+
+/* Also targets standard horizontal rules if they are being injected */
+.archive hr {
+  display: none;
+}
+
+/* --- UPDATED HEADER STYLING --- */
+
+/* 1. Make the Title White and Centered */
+.category-title {
+  color: inherit; /* <--- Fix: Adapts to light/dark mode automatically */
+  margin-bottom: 5px; 
+  text-align: center; 
+}
+
+/* 2. The White Line under the Title */
+.title-divider {
+  border: 0;
+  border-top: 2px solid #ffffff; /* Explicit white line */
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* 3. The Year Styling (Separate Line) */
+.year-header {
+  color: #666; /* Grey text for year */
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* --- List Item Styling (The "Under Each Item" Fix) --- */
+
+/* Remove any default top-borders usually applied by the theme */
+.archive__item-teaser, 
+.archive__item {
+  border-top: none !important;
+}
+
+/* Add a line UNDER each publication item instead */
+.archive__item {
+  border-bottom: 1px solid #333; /* Dark grey separator */
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Optional: Remove the border from the very last item so it doesn't look floating */
+.archive__item:last-child {
+  border-bottom: none;
 }

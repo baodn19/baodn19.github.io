@@ -1,4 +1,4 @@
-{% include base_path %}
+<!-- {% include base_path %}
 
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
@@ -80,5 +80,41 @@
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
+  </article>
+</div> -->
+
+{% include base_path %}
+
+<div class="{{ include.type | default: 'list' }}__item publication-flex-row">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="pub-block-container">
+      
+      <div class="pub-image-column">
+        {% if post.label %}<div class="pub-label">{{ post.label }}</div>{% endif %}
+        {% if post.teaser %}
+          <div class="pub-teaser">
+            <img src="{{ post.teaser | prepend: '/images/' | prepend: base_path }}" alt="">
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="pub-content-column">
+        <h2 class="archive__item-title" itemprop="headline">
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+        </h2>
+
+        <p class="pub-authors">{{ post.authors | default: site.name }}</p>
+
+        <p class="pub-venue"><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+
+        <div class="pub-buttons">
+          {% if post.abstracturl %}<a href="{{ post.abstracturl }}" class="pub-btn">Abstract</a>{% endif %}
+          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="pub-btn">BibTeX</a>{% endif %}
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-btn">PDF</a>{% endif %}
+          {% if post.arxivurl %}<a href="{{ post.arxivurl }}" class="pub-btn">arXiv</a>{% endif %}
+        </div>
+      </div>
+
+    </div>
   </article>
 </div>
