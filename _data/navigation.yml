@@ -9,7 +9,7 @@
 
 main:
   - title: "Publications"
-    url: https://baodn19.github.io/publications/
+    url: /publications/
 
   # - title: "Talks"
   #   url: /talks/    
