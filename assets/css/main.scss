@@ -59,15 +59,16 @@
 }
 
 .news-date {
-  font-weight: bold;
+  font-weight: bold; 
   color: #ffffff !important;
   min-width: 120px;
   flex-shrink: 0; /* Ensures the date doesn't get squashed */
 }
 
 .news-content {
-  color: #ccc; /* Slightly grey for the text */
+  color: #ffffff !important; /* This forces the main text to white */
   line-height: 1.4;
+  flex: 1;                  /* Ensures text takes up the remaining space */
 }
 
 .news-content a {
