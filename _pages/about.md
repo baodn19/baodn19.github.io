@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: https://baodn19.github.io/
 title: "Ngoc Bao Dinh"
 author_profile: true
 redirect_from: 

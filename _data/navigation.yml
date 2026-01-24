@@ -9,7 +9,7 @@
 
 main:
   - title: "Publications"
-    url: /publications/
+    url: https://baodn19.github.io/publications/
 
   # - title: "Talks"
   #   url: /talks/    
@@ -18,7 +18,7 @@ main:
   #   url: /teaching/    
     
   - title: "Project"
-    url: /portfolio/
+    url: https://baodn19.github.io/portfolio/
         
   # - title: "Blog Posts"
   #   url: /year-archive/
