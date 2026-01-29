@@ -100,7 +100,11 @@
 
       <div class="pub-content-column">
         <h2 class="archive__item-title" itemprop="headline">
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          {% if post.link %}
+            <a href="{{ post.link }}">{{ post.title }}</a>
+          {% else %}
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          {% endif %}
         </h2>
 
         <p class="pub-authors">{{ post.authors | default: site.name }}</p>

@@ -6,7 +6,7 @@ authors: "Hong Wang, Ngoc Bao Dinh, and Zhao Han"
 date: 2026-03-16
 venue: 'HRI 2026 Companion'
 paperurl: 'https://baodn19.github.io/assets/pdf/HRILBR26-EvaluatingDynamicSurfaceCompensation.pdf'
-permalink: 'https://therarelab.com/publications/hri26lbr-evaluating-dynamic-surface-compensation-for-robots-with-projected-ar/'
+link: 'https://therarelab.com/publications/hri26lbr-evaluating-dynamic-surface-compensation-for-robots-with-projected-ar/'
 teaser: "/thumbnail/HRILBR26-EvaluatingDynamicSurfaceCompensation.png"  # Add this line (place image in /images/ folder)
 label: "HRI"                 # The text for the colored box above the image
 doi: "https://doi.org/10.1145/3776734.3794434"
