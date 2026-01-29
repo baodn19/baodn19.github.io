@@ -10,6 +10,7 @@ link: 'https://therarelab.com/publications/hri26lbr-evaluating-dynamic-surface-c
 teaser: "/thumbnail/HRILBR26-EvaluatingDynamicSurfaceCompensation.png"  # Add this line (place image in /images/ folder)
 label: "HRI"                 # The text for the colored box above the image
 doi: "https://doi.org/10.1145/3776734.3794434"
+selected: true
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.

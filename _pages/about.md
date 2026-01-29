@@ -36,3 +36,24 @@ News
 
 Selected Publications
 ======
+{% include base_path %}
+
+{% for post in site.publications reversed %}
+  {% if post.selected %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<style>
+/* Tighten the internal spacing of the publication cards */
+.publication-flex-row p {
+  margin-bottom: 0.2em !important; /* Reduces gap between authors/venue */
+}
+.publication-flex-row .archive__item-title {
+  margin-top: 0 !important;
+  margin-bottom: 0.3em !important; /* Reduces gap below title */
+}
+.publication-flex-row {
+  margin-bottom: 1.5em; /* Controls gap between different papers */
+}
+</style>
