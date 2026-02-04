@@ -1,6 +1,6 @@
 ---
 title: "Pick & Place Manipulator"
-excerpt: "A simulated MyCobot280 6 DOF manipulator for learning active perception."
+excerpt: "🦾 A simulated MyCobot280 6 DOF manipulator for learning active perception."
 collection: portfolio
 category: personal
 header:

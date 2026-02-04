@@ -14,7 +14,7 @@
   <div class="card-content">
     <h3 class="card-title">{{ post.title }}</h3>
     <div class="card-excerpt">
-      {{ post.excerpt | markdownify | strip_html | truncate: 120 }}
+      {{ post.excerpt | markdownify }}
     </div>
   </div>
 </a>
