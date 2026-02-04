@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Computer Science student at the University of South Florida, working on the intersection of robotics and computer vision. 
+I am a Computer Science student, minoring in Mathematics at the University of South Florida, working on the intersection of robotics and computer vision. 
 
 I am an undergraduate researcher at the [Embodied Robotics and Autonomy](https://xiaominlin.github.io/) under [Prof. Xiaomin Lin](https://www.linkedin.com/in/xiaomin-lin/)'s mentorship, contributing to building perception systems for edge robotics. During 2025, I was an undergraduate researcher at the [Reality, Autonomy, and Robot Experience (RARE) Lab](https://therarelab.com/) under [Prof. Zhao Han](https://zhaohanphd.com/)'s guidance, working on human-robot interaction and augmented reality research.
 

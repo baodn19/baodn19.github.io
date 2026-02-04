@@ -5,13 +5,55 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
+<!-- {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+{% endif %} -->
 
 {% include base_path %}
 
-<h1 class="category-title">Short Papers & Reports</h1>
+<style>
+/* =========================================
+   THEME LOGIC (Matches Portfolio Page)
+   ========================================= */
+:root {
+  --text-color: #333333;
+  --accent-color: #61dafb; /* The Blue Line */
+}
+
+/* Check for Dark Mode (Website Class) */
+body.dark, .dark, .dark-mode, [data-theme="dark"], body[class*="dark"] {
+  --text-color: #ffffff;
+}
+
+/* Check for Dark Mode (System Preference) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #ffffff;
+  }
+}
+
+/* =========================================
+   YEAR HEADER STYLING
+   ========================================= */
+.year-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 40px;      /* Spacing above */
+  margin-bottom: 20px;   /* Spacing below */
+  
+  /* Matches your Project Categories */
+  color: inherit !important; 
+  border-left: 4px solid #61dafb; 
+  padding-left: 10px;
+}
+
+/* Optional: Fix for the main page title spacing */
+.category-title {
+  margin-top: 40px;
+}
+</style>
+
+<h1 class="category-title" style="margin-top: 20px;">Short Papers & Reports</h1>
 
 <hr class="title-divider">
 

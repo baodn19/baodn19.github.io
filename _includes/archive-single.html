@@ -36,7 +36,7 @@
           {% endif %}
         </h2>
 
-        <p class="pub-authors">{{ post.authors | default: site.name }}</p>
+        <p class="pub-authors">{{ post.authors | default: site.name | replace: 'Ngoc Bao Dinh', '<u>Ngoc Bao Dinh</u>'}}</p>
 
         <p class="pub-venue"><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
 

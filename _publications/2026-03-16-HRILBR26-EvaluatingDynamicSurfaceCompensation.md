@@ -2,7 +2,7 @@
 title: "Evaluating Dynamic Surface Compensation for Robots with Projected AR"
 collection: publications
 category: manuscripts
-authors: "Hong Wang, Ngoc Bao Dinh, and Zhao Han"
+authors: 'Hong Wang, Ngoc Bao Dinh, and <a href="https://zhaohanphd.com/">Zhao Han</a>'
 date: 2026-03-16
 venue: 'HRI 2026 Companion'
 paperurl: 'https://baodn19.github.io/assets/pdf/HRILBR26-EvaluatingDynamicSurfaceCompensation.pdf'

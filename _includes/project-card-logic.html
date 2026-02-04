@@ -1,0 +1,20 @@
+{% if post.repo_url %}
+  {% assign card_link = post.repo_url %}
+{% else %}
+  {% assign card_link = base_path | append: post.url %}
+{% endif %}
+
+<a href="{{ card_link }}" class="project-card">
+  {% if post.header.teaser %}
+    <img src="{{ base_path }}{{ post.header.teaser }}" alt="{{ post.title }}" class="card-image">
+  {% else %}
+    <div class="card-image" style="display: flex; align-items: center; justify-content: center; color: #555;">No Image</div>
+  {% endif %}
+
+  <div class="card-content">
+    <h3 class="card-title">{{ post.title }}</h3>
+    <div class="card-excerpt">
+      {{ post.excerpt | markdownify | strip_html | truncate: 120 }}
+    </div>
+  </div>
+</a>
