@@ -85,7 +85,7 @@
 .pub-block-container {
   display: flex;
   gap: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 12px;
   align-items: flex-start;
 }
 
@@ -145,17 +145,11 @@
   border-bottom: none !important;
 }
 
-/* Professional Publication List with Separator Bars */
+/* Publication list: no separators between papers in the same year */
 .publication-flex-row {
-  border-top: 1px solid #eeeeee; /* The light bar between papers */
-  padding-top: 30px;
-  margin-top: 30px;
-}
-
-/* Remove the bar from the very first item */
-.publication-flex-row:first-of-type {
   border-top: none;
-  margin-top: 0;
+  padding-top: 8px;
+  margin-top: 8px;
 }
 
 .archive__subtitle {
@@ -184,12 +178,12 @@
   margin-bottom: 30px;
 }
 
-/* 3. The Year Styling (Separate Line) */
+/* 3. The Year Styling */
 .year-header {
   color: #666; /* Grey text for year */
   font-size: 1.8em;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   display: block;
 }
 
@@ -201,14 +195,8 @@
   border-top: none !important;
 }
 
-/* Add a line UNDER each publication item instead */
-.archive__item {
-  border-bottom: 1px solid #333; /* Dark grey separator */
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-
-/* Optional: Remove the border from the very last item so it doesn't look floating */
-.archive__item:last-child {
+.publication-flex-row .archive__item {
   border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }

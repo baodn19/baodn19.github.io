@@ -21,12 +21,16 @@ News
 ======
 <div class="news-scroll-box">
   <div class="news-item">
+    <span class="news-date">Jul 23, 2026</span>
+    <span class="news-content">I presented the <a href="https://baodn19.github.io/assets/pdf/OneUSF26-BudgetRobotRAGVLA.pdf">Synergizing Low-Cost Mobile Manipulation with Retrieval-Augmented Vision-Language-Action Models</a> poster at the 2026 OneUSF Summer Undergraduate Research Symposium.</span>
+  </div>
+  <div class="news-item">
     <span class="news-date">Jan 16, 2026</span>
-    <span class="news-content">I was admitted to the ERA Lab.</span>
+    <span class="news-content">I was admitted to the <a href="https://era-research-lab.github.io/">ERA Lab</a>.</span>
   </div>
   <div class="news-item">
     <span class="news-date">Jan 13, 2026</span>
-    <span class="news-content">Evaluating Dynamic Surface Compensation for Robots with Projected AR was accepted to HRI 2026 Late-Breaking Reports.</span>
+    <span class="news-content"><a href="https://therarelab.com/publications/hri26lbr-evaluating-dynamic-surface-compensation-for-robots-with-projected-ar/">Evaluating Dynamic Surface Compensation for Robots with Projected AR</a> was accepted to HRI 2026 Late-Breaking Reports.</span>
   </div>
   <div class="news-item">
     <span class="news-date">Oct 24, 2025</span>
